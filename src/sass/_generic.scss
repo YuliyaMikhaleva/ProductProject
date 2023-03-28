@@ -1,0 +1,141 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+
+}
+
+body {
+  min-height: 100vh;
+  min-width: 360px;
+  overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h1, h2, h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease-in-out;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
