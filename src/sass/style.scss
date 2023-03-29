@@ -7,18 +7,15 @@
 
 // common styles
 
-html{
-
-
-}
-body{
+.product-detail{
   font-family: 'Open Sans', sans-serif;
+  h1{
+    font-size: 46px;
+    font-weight: 500;
+    margin: 0 0 65px 0;
+  }
 }
-h1{
-  font-size: 46px;
-  font-weight: 500;
-  margin: 0 0 65px 0;
-}
+
 
 .container{
   width: 100%;
@@ -28,129 +25,117 @@ h1{
   padding-left: 15px;
   box-sizing: border-box;
 }
-
-.card{
-  h3{
-    font-weight: 500;
-    font-size: 30px;
-    margin: 0 0 30px 0;
-  }
-  &__info{
-    display: grid;
-    grid-template-columns: 47% 53%;
-    grid-column-gap: 20px;
-  }
-  &__param{
-    font-size: 12px;
-    line-height: 28px;
-    text-transform: uppercase;
-    letter-spacing: .3px;
-    color: #1576d5;
-    font-weight: 600
-  }
-  &__param-value{
-    letter-spacing: -.6px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
-    color: #707070;
-    margin-bottom: 25px;
-  }
-  &__desc {
-    max-width: 850px;
-    & > * {
-      font-size: 16px;
-      line-height: 150%;
-    }
-
-  }
-
-  &__img{
-    max-height: 275px;
-    img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    }
-  }
-
-  &__subtitle{
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 37px;
-    font-weight: 600;
-  }
-
-  &__tags{
-    max-width: 900px;
-  }
-
-  &__tags-item{
-    display: inline-block;
-    color: #242424;
-    background-color: #f3f3f3;
-    margin: 0 10px 10px 0;
-    font-size: 18px;
-    padding: 3px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    &:hover, &:focus{
-      color: #fff;
-      background-color: #1576d5
-    }
-  }
+.card h3{
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0 0 30px 0;
 }
+
+.card__info{
+  display: grid;
+  grid-template-columns: 47% 53%;
+  grid-column-gap: 20px;
+}
+
+.card__param{
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  color: #1576d5;
+  font-weight: 600
+}
+
+.card__param-value{
+  letter-spacing: -.6px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 25px;
+}
+.card__desc{
+  max-width: 850px;
+}
+.card__desc > *{
+  font-size: 16px;
+  line-height: 150%;
+}
+.card__img{
+  max-height: 275px;
+}
+.card__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card__subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 37px;
+  font-weight: 600;
+}
+.card__tags{
+  max-width: 900px;
+}
+.card__tags-item{
+  display: inline-block;
+  color: #242424;
+  background-color: #f3f3f3;
+  margin: 0 10px 10px 0;
+  font-size: 18px;
+  padding: 3px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.card__tags-item:hover,:focus{
+  color: #fff;
+  background-color: #1576d5
+}
+
 
 @media (max-width: 1199px ) {
   .container{
     max-width: 960px;
   }
-  h1{
+  .product-detail h1{
     font-size: 36px;
     margin: 0 0 30px 0;
   }
-  .card{
-    h3{
-      font-size: 26px;
-      margin: 0 0 15px 0;
-    }
-    &__param-value{
-      font-size: 18px;
-    }
+  .card h3{
+    font-size: 26px;
+    margin: 0 0 15px 0;
+  }
+  .card__param-value{
+    font-size: 18px;
   }
 
 }
 @media (max-width: 991px) {
-  .container{
+  .container {
     max-width: 720px;
   }
-  h1{
+  .product-detail h1 {
     font-size: 30px;
   }
-  .card{
-    h3{
-      font-size: 20px;
-      letter-spacing: -.75px;
-    }
-
-    &__info{
-      grid-template-columns: 1fr;
-      margin-bottom: 60px;
-    }
-
-    &__img{
-      max-width: 412px;
-    }
-
-    &__subtitle{
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
-
-    &__tags-item{
-      font-size: 13px;
-      padding: 3px 10px;
-    }
+  .card h3 {
+    font-size: 20px;
+    letter-spacing: -.75px;
+  }
+  .card__info {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+  .card__img {
+    max-height: 352px;
+  }
+  .card__subtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .card__tags-item {
+    font-size: 13px;
+    padding: 3px 10px;
   }
 }
 
@@ -160,6 +145,12 @@ h1{
   }
   h1{
     font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container{
+    max-width: 100%;
   }
 }
 
